@@ -1,0 +1,199 @@
+.hero-container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* HERO */
+
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:50px;
+  padding:80px 0;
+}
+
+.hero-left{
+  flex:1;
+}
+
+.tag{
+  background:rgba(220,20,60,0.1);
+  color:crimson;
+  padding:8px 16px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:600;
+}
+
+.hero-left h1{
+  margin-top:20px;
+  font-size:4rem;
+  line-height:1.2;
+  color:#222;
+}
+
+.hero-left h1 span{
+  color:crimson;
+}
+
+.hero-left p{
+  margin-top:20px;
+  color:#666;
+  font-size:1.1rem;
+  line-height:1.7;
+}
+
+.hero-buttons{
+  margin-top:30px;
+  display:flex;
+  gap:15px;
+
+  
+}
+
+
+.primary-btn{
+  background:crimson;
+  color:white;
+  border:none;
+  padding:14px 28px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+
+  transition:0.3s ease;
+}
+
+.primary-btn:hover{
+  transform:scale(1.05);
+}
+
+.secondary-btn{
+  border:2px solid crimson;
+  background:white;
+  color:crimson;
+  padding:14px 28px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+
+  transition:0.3s ease;
+}
+
+.secondary-btn:hover{
+  transform:scale(1.05);
+}
+
+.hero-right{
+  flex:1;
+}
+
+.hero-right img{
+  width:100%;
+  border-radius:25px;
+  box-shadow:0 15px 40px rgba(220,20,60,0.15);
+}
+
+/* FEATURES */
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+  margin-bottom:70px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  border:1px solid rgba(220,20,60,0.15);
+  box-shadow:0 8px 25px rgba(220,20,60,0.08);
+
+  transition:0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(220,20,60,0.25);
+}
+
+.card h3{
+  color:crimson;
+  margin-bottom:15px;
+}
+
+.card p{
+  color:#666;
+  line-height:1.6;
+}
+
+/* CONTACT */
+
+.contact-card{
+  text-align:center;
+  background:white;
+  padding:50px;
+  border-radius:25px;
+  margin-bottom:60px;
+
+  border:1px solid rgba(220,20,60,0.15);
+
+  box-shadow:0 8px 25px rgba(220,20,60,0.08);
+}
+
+.contact-card h2{
+  color:#222;
+}
+
+.contact-card p{
+  margin:15px 0;
+  color:#666;
+}
+
+.contact-card h3{
+  color:crimson;
+  margin-bottom:25px;
+}
+
+.payment-btn{
+  background:crimson;
+  color:white;
+  border:none;
+  padding:14px 30px;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+
+  transition:0.3s ease;
+}
+
+.payment-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(220,20,60,0.25);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .hero-left h1{
+    font-size:2.8rem;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+}

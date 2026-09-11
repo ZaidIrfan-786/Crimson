@@ -1,0 +1,147 @@
+.admin-page{
+    min-height:100vh;
+    padding:40px;
+    background:#fafafa;
+}
+
+.admin-header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.admin-header h1{
+    color:crimson;
+    margin-bottom:10px;
+}
+
+.admin-header p{
+    color:#666;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+    margin-bottom:40px;
+}
+
+.stat-card{
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.08);
+}
+
+.stat-card h2{
+    color:crimson;
+    margin-bottom:10px;
+}
+
+.admin-container{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+
+    margin-bottom:40px;
+}
+
+.products-section,
+.add-product{
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    padding:15px;
+    border-bottom:1px solid #eee;
+    text-align:left;
+}
+
+th{
+    color:crimson;
+}
+
+.add-product input,
+.add-product textarea{
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+}
+
+.add-product button{
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    background:crimson;
+
+    color:white;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+.orders-section{
+    background:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.08);
+}
+
+.orders-section h2{
+    color:crimson;
+    margin-bottom:20px;
+}
+
+.order-card{
+    padding:15px;
+    border:1px solid #eee;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.order-card span{
+    color:green;
+    font-weight:600;
+}
+
+@media(max-width:900px){
+
+    .admin-container{
+        grid-template-columns:1fr;
+    }
+
+}

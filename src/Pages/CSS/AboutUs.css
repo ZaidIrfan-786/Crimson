@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+.about-page {
+  background: white;
+}
+
+/* HERO */
+
+.about-hero {
+  text-align: center;
+  padding: 100px 10%;
+}
+
+.about-hero h1 {
+  font-size: 3.5rem;
+  color: crimson;
+  margin-bottom: 15px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.about-hero p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* STORY */
+
+.our-story {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 10%;
+}
+
+.story-content {
+  flex: 1;
+}
+
+.story-content h2 {
+  color: crimson;
+  margin-bottom: 20px;
+}
+
+.story-content p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.story-image {
+  flex: 1;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* VALUES */
+
+.values {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.values h2 {
+  color: crimson;
+  margin-bottom: 40px;
+}
+
+.value-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 25px;
+}
+
+.value-card {
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+}
+
+.value-card h3 {
+  color: crimson;
+  margin-bottom: 15px;
+}
+
+/* STATS */
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 80px 10%;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  min-width: 220px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  background: crimson;
+  color: white;
+}
+
+.stat-box h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .our-story {
+    flex-direction: column;
+  }
+
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+}
